@@ -1,0 +1,253 @@
+body {
+    background-color: #f4f4f4; /* Light background for contrast */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    height: 60px;
+    background-color: #2c3e50; /* Dark navy blue for a royal feel */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar li {
+    margin-left: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light color for contrast */
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #34495e; /* Slightly lighter on hover */
+    border-radius: 5px;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient for a luxurious feel */
+    color: white;
+    padding: 40px;
+}
+
+.intro .img img {
+    height: 400px;
+    width: 400px; /* Fixed width for consistency */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.name {
+    flex: 1;  /* this keep name to the side of image */
+    padding-left: 20px;
+}
+
+.about, .education, .skills {
+    display: flex;
+    align-items: center;
+    background-color: #2c3e50; /* Dark navy blue */
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about_img, .education_img, .skills_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.about_img img, .education_img img, .skills_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover to maintain aspect ratio */
+}
+
+.skills {
+    background-color: #275c37; /* Dark Green */
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.skills h2{
+    align-self: flex-start;
+}
+
+.skills_intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center the image vertically */
+    margin-bottom: 20px; /* Space between intro and skills section */
+}
+
+.skills_img {
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Optional: rounded corners for the image container */
+    overflow: hidden; /* Ensure the image fits within the container */
+}
+
+.skills_img img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.skills_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.skills_category {
+    margin: 20px;
+    background-color: rgba(167, 72, 72, 0.9); /* Light background for categories */
+    padding: 10px; /* Padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(133, 96, 96, 0.1); /* Subtle shadow for depth */
+}
+
+
+.project_number {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    gap: 20px; /* Space between projects */
+}
+
+.project {
+    height: 300px;
+    width: 100%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-evenly;
+    background-color: #2980b9; /* Blue background for project */
+    color: white;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.project_summary {
+    height: 100%;
+    width: 50%;
+}
+
+.project_summary ol li {
+    margin-top: 40px;
+}
+
+.project_summary ol li strong {
+    margin-right: 10px;
+}
+
+.project-img {
+    height: 100%; /* Fixed height for images */
+    width: 50%; /* Fixed width for images */
+    margin-right: 20px; /* Space between image and content */
+    background-color: #8e44ad; /* Purple background for project image area */
+}
+
+.project-img img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: contain; /* Cover to maintain aspect ratio */
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.services ol li {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.services button {
+    height: 50px;
+    margin-bottom: 5px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #27ae60; /* Green background for button */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.services button:hover {
+    background-color: #219150; /* Darker green on hover */
+}
+
+.contact {
+    background-color: #34495e; /* Dark gray background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactform {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.contactform button {
+    background-color: #3498db; /* Blue background for form button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contactform button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+
